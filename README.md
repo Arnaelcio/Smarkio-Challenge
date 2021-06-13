@@ -87,5 +87,5 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 
 #### Caso haja algum problema em rodar a aplicação, não hesite em me contactar via e-mail ou linkedIn:
 
-[E-mail](arnaelcio.gomes@gmail.com) , 
+E-mail: arnaelcio.gomes@gmail.com, 
 [LinkedIn](https://www.linkedin.com/in/arnaelciogomespereira/)
