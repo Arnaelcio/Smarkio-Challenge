@@ -27,7 +27,7 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 2. Entre no diretório `backEnd` 
 - `cd backEnd`.
 
-3. Instale as dependências [**Caso existam**]
+3. Instale as dependências para o BackEnd
 
 - `npm install`
 
@@ -39,7 +39,7 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 
 - `cd Frontend`.
 
-6. Instale as dependências [**Caso existam**]
+6. Instale as dependências para o Frontend
 
 - `npm install`
 
