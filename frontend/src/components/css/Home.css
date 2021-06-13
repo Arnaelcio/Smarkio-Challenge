@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+
+.home {
+  align-items: center;
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  height: 650px;
+  justify-content: center;
+  justify-self: center;
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: aquamarine; */
+}
+.comment-box {
+  border: 1px solid white;
+  border-radius: 6px;
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  width: 45%;
+  /* background-color: blue; */
+}
+.text-box {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 10px;
+  width: 90%;
+  /* background-color: chocolate; */
+}
+.text-box h4 {
+  align-self: flex-start;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.text-box input {
+  border-radius: 6px;
+  font-weight: bold;
+  height: 25px;
+  margin-bottom: 1%;
+  width: 80%;
+}
+
+.text-box input:focus {
+  outline: none;
+}
+.text-box > textarea {
+  border-radius: 6px;
+  font-weight: bold;
+  height: 80px;
+  margin-bottom: 2%;
+  width: 80%;
+}
+.text-box > textarea:focus {
+  outline: none;
+}
+.text-box > button {
+  background-color: #78bce9;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 25px;
+  letter-spacing: 3px;
+  width: 80%;
+}
+hr {
+  height: 500px;
+  width: 1px;
+}
+.comments-view {
+  border: 1px solid white;
+  border-radius: 6px;
+  height: 50%;
+  overflow-y: auto;
+  text-align-last: left;
+  width: 45%;
+  /* background-color: chartreuse; */
+}
+h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-left: 1%;
+}
+
+.comment-view > p {
+  color: white;
+  margin-top: 1%;
+  text-align: left;
+  /* background-color: burlywood; */
+}
+.comment-view > h4 {
+  color: white;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1%;
+  width: 30%;
+  /* background-color: blueviolet */
+}
+.comment-view {
+  border: 1px solid white;
+  border-radius: 2%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  padding: 1%;
+  width: 95%;
+  /* background-color: brown; */
+}
+
+.comment-view > button {
+  background-color: #78bce9;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  height: 22px;
+  letter-spacing: 3px;
+  text-align-last: center;
+  width: 50%;
+}

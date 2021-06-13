@@ -1,0 +1,22 @@
+.popUpToListen {    
+background-color: #78bce9;
+    border-radius: 16px;
+height: 40%;
+padding: 12px;
+position: absolute;
+top: 25%;
+width: 60%;
+z-index: 2;
+z-index: 2;
+}
+.popUpToListen h2 {
+color: white;
+}
+.popUpToListen h4 {
+cursor: pointer;
+font-size: 20px;
+}
+.popUpToListen span {
+    font-size: 22px;
+}
+    
