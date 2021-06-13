@@ -59,14 +59,7 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 
 11. Ainda no primeiro terminal, você deverá ver a mensagem abaixo:
 
-`> backtend_smarkio@1.0.0 dev`
-`> nodemon index.js`
 
-`[nodemon] 2.0.7`
-`[nodemon] to restart at any time, enter rs`
-`[nodemon] watching path(s): *.*`
-`[nodemon] watching extensions: js,mjs,json`
-`[nodemon] starting node index.js`
 `ouvindo a porta 3001`
 ##### Isso significa que está tudo OK e o backEnd já está rodando!
 
@@ -79,14 +72,9 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 - `npm start`.
 
 
-11. Ainda no segundo terminal, você deverá ver a mensagem abaixo:
+11. Ainda no segundo terminal, você deverá verficar se existe a mensagem abaixo:
 
 `Compiled successfully!`
-`You can now view frontend in the browser.`
- ` Local:            http://localhost:3000`
-`  On Your Network:  http://10.0.1.7:3000`
-`Note that the development build is not optimized.`
-`To create a production build, use npm run build.`
 
 ##### Isso significa que está tudo OK e o Frontend já está rodando! Deverá abrir uma guia do seu browser automaticamente com a plicação rodando, mas caso isso não aconteça, basta digitar:  `http://localhost:3000` na barra de endereço do seu navegador para ver a aplicação rodando!
 
