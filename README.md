@@ -1,70 +1,95 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projeto Para teste técnico da SMARKIO. 
 
-## Available Scripts
+  
 
-In the project directory, you can run:
+Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.com/facebook/create-react-app), [Node.Js](https://nodejs.org/en/docs/), [MySql](https://dev.mysql.com/doc/), [Axios](https://axios-http.com/docs/intro), [Express](https://expressjs.com/pt-br/4x/api.html) e [Text To Speech do IBM Watson](https://www.ibm.com/cloud/watson-text-to-speech).
 
-### `yarn start`
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Como Rodar rodar localmente o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  
+## Antes de começar a desenvolver:
 
-### `yarn test`
+1. Clone o repositório
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `git clone git@github.com:Arnaelcio/Smarkio-Challenge.git`.
 
-### `yarn build`
+- Entre na pasta do repositório que você acabou de clonar:
+  - `cd Smarkio-Challenge`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**ATENÇÃO!!**
+#### Note que existem dois diretórios; um chamado `backEnd` e outro chamado `Frontend`; Cada um desses diretórios possui um script para poder funcionar como  mostrado abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+2. Entre no diretório `backEnd` 
+- `cd backEnd`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Instale as dependências [**Caso existam**]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Volte para o diretório Raiz do projeto `Smarkio-Challenge`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `cd ..`
 
-## Learn More
+5. Entre no diretório `Frontend` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `cd Frontend`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Instale as dependências [**Caso existam**]
 
-### Code Splitting
+- `npm install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. Volte para o diretório Raiz do projeto `Smarkio-Challenge`
 
-### Analyzing the Bundle Size
+- `cd ..`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+8. Abra 2 terminais de linha de comando (bash, Shell, ou de sua preferencia)
 
-### Making a Progressive Web App
+9. No primeiro terminal, entre no diretório `backEnd` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `cd BackEnd`.
 
-### Advanced Configuration
+10. Rode o comando abaixo para inciar o servidor do  `backEnd` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `npm run dev`.
 
-### Deployment
+11. Ainda no primeiro terminal, você deverá ver a mensagem abaixo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+`> backtend_smarkio@1.0.0 dev`
+`> nodemon index.js`
 
-### `yarn build` fails to minify
+`[nodemon] 2.0.7`
+`[nodemon] to restart at any time, enter rs`
+`[nodemon] watching path(s): *.*`
+`[nodemon] watching extensions: js,mjs,json`
+`[nodemon] starting node index.js`
+`ouvindo a porta 3001`
+##### Isso significa que está tudo OK e o backEnd já está rodando!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+12. No segundo terminal, entre no diretório `Frontend` 
+
+- `cd Frontend`.
+
+10. Rode o comando abaixo para inciar a aplicação em React  
+
+- `npm start`.
+
+
+11. Ainda no segundo terminal, você deverá ver a mensagem abaixo:
+
+`Compiled successfully!`
+`You can now view frontend in the browser.`
+ ` Local:            http://localhost:3000`
+`  On Your Network:  http://10.0.1.7:3000`
+`Note that the development build is not optimized.`
+`To create a production build, use npm run build.`
+
+##### Isso significa que está tudo OK e o Frontend já está rodando! Deverá abrir uma guia do seu browser automaticamente com a plicação rodando, mas caso isso não aconteça, basta digitar:  `http://localhost:3000` na barra de endereço do seu navegador para ver a aplicação rodando!
+
+
+
+### Pronto !! Agora é só testar a aplicação.  : - )
