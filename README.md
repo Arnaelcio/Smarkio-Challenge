@@ -81,3 +81,11 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 
 
 ### Pronto !! Agora é só testar a aplicação.  : - )
+
+
+####Caso haja algum problema em rodar a aplicação, não exitem em contcta via email ou linkedIn
+
+#### Caso haja algum problema em rodar a aplicação, não hesite em me contactar via e-mail ou linkedIn:
+
+[E-mail](arnaelcio.gomes@gmail.com) , 
+[LinkedIn](https://www.linkedin.com/in/arnaelciogomespereira/)
