@@ -13,18 +13,18 @@ const getAllComments = async (req, res) => {
   }
 };
 const addComment = async (req, res) => {
-    const { name, comment } = req.body;
-    const newComment = await commentService.add(name, comment);
-    if (newComment !== null) {
-      return res.status(status.CREATED).send(newComment);
-    } else {
-        res
-        .status(status.INTERNAL_SERVER_ERROR)
-        .send({ message: "erro ao solicitar requisição" });
-    }
-  };
+  const { name, comment } = req.body;
+  const newComment = await commentService.add(name, comment);
+  if (newComment !== null) {
+    return res.status(status.CREATED).send(newComment);
+  } else {
+    res
+      .status(status.INTERNAL_SERVER_ERROR)
+      .send({ message: "erro ao solicitar requisição" });
+  }
+};
 
 module.exports = {
   getAllComments,
-  addComment
+  addComment,
 };

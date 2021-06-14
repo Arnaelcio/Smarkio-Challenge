@@ -1,21 +1,19 @@
 import React from "react";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./css/Header.css";
 import logo from "../images/logo-branca.png";
 
 function Header() {
   return (
     <div className="header-section">
-        <Link to='/'>
-      <img src={logo} alt="logo-section-header" />
-        </Link>
+      <Link to="/">
+        <img src={logo} alt="logo-section-header" />
+      </Link>
       <ul>
         <div>
           <li>
-              <Link to='/'>
-              HOME
-              </Link>
-              </li>
+            <Link to="/">HOME</Link>
+          </li>
         </div>
         <div>
           <li>

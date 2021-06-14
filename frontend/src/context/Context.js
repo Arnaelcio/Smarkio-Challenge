@@ -12,7 +12,7 @@ function DataProvider(props) {
   const [inputNameValue, setInputNameValue] = useState("");
   const [comments, setComments] = useState("");
   const [textToSpeechShow, setTtextToSpeechShow] = useState(false);
-  const [ spanTextToSpeechShow, setSpanTextToSpeechShow] = useState('')
+  const [spanTextToSpeechShow, setSpanTextToSpeechShow] = useState("");
 
   useEffect(() => {
     const getCommnets = async () => {
@@ -21,15 +21,7 @@ function DataProvider(props) {
       });
       setComments(responseDb);
     };
-    // const getAudio = async()=>{
-    //   const responseWatson =  await db.post("/watson", { index: '19', comment: ' dois teste' })
-    //   .then(res=>{
-    //     return res
-    //   })
-    //   console.log(responseWatson);
-    // }
 
-    // getAudio();
     getCommnets();
   }, []);
 
@@ -42,50 +34,23 @@ function DataProvider(props) {
     });
     setComments(responseDb);
   };
-
-  // useEffect(()=>{
-  //   const getAudio = async()=>{
-  //       const res =  comments & comments.map(({ comment }, index) => {
-  //         return db.post("/watson", {index,comment})
-  //     })
-  //   return res
-  //   }
-  //      getAudio();
-  // },[comments])
-
-  // const responseWatson =  await db.get("/watson")
-  // .then(res=>{
-  //   return res.data
-  // })
-  // console.log(responseWatson);
-  // }
-
-  // )},[comments]);
-
   const listenComment = (index, comment, e) => {
-    // e.preventDefault();
     const res = db.post("/watson", { index, comment }).then((res) => {
       return res.data;
     });
-    // if (res === "ok") {
-      // console.log(comment);
-      setSpanTextToSpeechShow(comment)
-      setTtextToSpeechShow(true)
-      return res;
-      // }
-    };
-    
-    const  PopUpListenPage = ()=>{
-   setTtextToSpeechShow(!textToSpeechShow)
+    setSpanTextToSpeechShow(comment);
+    setTtextToSpeechShow(true);
+    return res;
+  };
 
- }
-
+  const PopUpListenPage = () => {
+    setTtextToSpeechShow(!textToSpeechShow);
+  };
 
   useEffect(() => {
     console.log(`audio: ${audio}`);
     setAudio(song);
     const audio2 = document.querySelector("#audio-content");
-    // const myAudio = new Audio(song)
     if (audio2 !== null) {
       console.log(`song : ${song}`);
       return audio2.play();
@@ -108,7 +73,7 @@ function DataProvider(props) {
         textToSpeechShow,
         setTtextToSpeechShow,
         spanTextToSpeechShow,
-        PopUpListenPage
+        PopUpListenPage,
       }}
     >
       {children}
