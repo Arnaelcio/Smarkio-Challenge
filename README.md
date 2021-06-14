@@ -1,5 +1,5 @@
 
-# Projeto Para teste técnico da SMARKIO. 
+# Projeto para teste técnico da SMARKIO. 
 
   
 
@@ -7,7 +7,7 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 
   
 
-## Como Rodar rodar localmente o projeto
+## Como rodar localmente o projeto
 
   
 ## Antes de começar a desenvolver:
@@ -21,39 +21,39 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 
 
 **ATENÇÃO!!**
-#### Note que existem dois diretórios; um chamado `backEnd` e outro chamado `Frontend`; Cada um desses diretórios possui um script para poder funcionar como  mostrado abaixo:
+#### Note que existem dois diretórios; um chamado `backEnd` e outro chamado `frontend`; Cada um desses diretórios possui um script para poder funcionar como  mostrado abaixo:
 
 
 2. Entre no diretório `backEnd` 
 - `cd backEnd`.
 
-3. Instale as dependências para o BackEnd
+3. Instale as dependências para o `backEnd`
 
 - `npm install`
 
-4. Volte para o diretório Raiz do projeto `Smarkio-Challenge`
+4. Volte para o diretório raiz do projeto `Smarkio-Challenge`
 
 - `cd ..`
 
-5. Entre no diretório `Frontend` 
+5. Entre no diretório `frontend` 
 
 - `cd Frontend`.
 
-6. Instale as dependências para o Frontend
+6. Instale as dependências para o `frontend`
 
 - `npm install`
 
-7. Volte para o diretório Raiz do projeto `Smarkio-Challenge`
+7. Volte para o diretório raiz do projeto `Smarkio-Challenge`
 
 - `cd ..`
 
-8. Abra 2 terminais de linha de comando (bash, Shell, ou de sua preferencia)
+8. Abra 2 terminais de linha de comando (bash, shell, ou de sua preferência)
 
 9. No primeiro terminal, entre no diretório `backEnd` 
 
 - `cd BackEnd`.
 
-10. Rode o comando abaixo para inciar o servidor do  `backEnd` 
+10. Rode o comando abaixo para inciar o servidor do `backEnd` 
 
 - `npm run dev`.
 
@@ -63,29 +63,28 @@ Este projeto foi desenvolvido usando as tecnologias [React.Js](https://github.co
 `ouvindo a porta 3001`
 ##### Isso significa que está tudo OK e o backEnd já está rodando!
 
-12. No segundo terminal, entre no diretório `Frontend` 
+12. No segundo terminal, entre no diretório `frontend` 
 
-- `cd Frontend`.
+- `cd frontend`.
 
-10. Rode o comando abaixo para inciar a aplicação em React  
+13. Rode o comando abaixo para inciar a aplicação em React  
 
 - `npm start`.
 
 
-11. Ainda no segundo terminal, você deverá verficar se existe a mensagem abaixo:
+14. Ainda no segundo terminal, você deverá verificar se existe a mensagem abaixo:
 
 `Compiled successfully!`
 
-##### Isso significa que está tudo OK e o Frontend já está rodando! Deverá abrir uma guia do seu browser automaticamente com a plicação rodando, mas caso isso não aconteça, basta digitar:  `http://localhost:3000` na barra de endereço do seu navegador para ver a aplicação rodando!
+##### Isso significa que está tudo OK e o frontend já está rodando! Deverá abrir uma guia do seu browser automaticamente com a plicação rodando, mas caso isso não aconteça, basta digitar:  `http://localhost:3000` na barra de endereço do seu navegador para ver a aplicação rodando!
 
 
 
 ### Pronto !! Agora é só testar a aplicação.  : - )
 
 
-####Caso haja algum problema em rodar a aplicação, não exitem em contcta via email ou linkedIn
 
-#### Caso haja algum problema em rodar a aplicação, não hesite em me contactar via e-mail ou linkedIn:
+#### Caso haja algum problema em rodar a aplicação, não hesite em me contactar via e-mail ou LinkedIn:
 
-E-mail: arnaelcio.gomes@gmail.com, 
+E-mail: arnaelcio.gomes@gmail.com
 [LinkedIn](https://www.linkedin.com/in/arnaelciogomespereira/)
