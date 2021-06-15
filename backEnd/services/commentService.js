@@ -1,4 +1,4 @@
-const commentModel = require("../models/commentModel");
+const commentModel = require("../models-old/commentModel");
 
 const getAll = async () => {
   const comments = await commentModel.getAll();
