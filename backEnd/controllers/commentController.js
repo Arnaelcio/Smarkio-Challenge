@@ -1,7 +1,6 @@
 const commentService = require("../services/commentService");
 const{ StatusCodes } = require('http-status-codes');
 
-
 const getAllComments = async (req, res) => {
   try {
     const comments = await commentService.getAll();
