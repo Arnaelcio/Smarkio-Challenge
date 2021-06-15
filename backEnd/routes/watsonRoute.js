@@ -2,7 +2,8 @@ const express = require("express");
 const fs = require("fs");
 const TextToSpeechV1 = require("ibm-watson/text-to-speech/v1");
 const { IamAuthenticator } = require("ibm-watson/auth");
-const status = require("../constants/statusCode");
+const{ StatusCodes } = require('http-status-codes');
+
 
 const router = express.Router();
 
@@ -40,7 +41,7 @@ router.post("/watson", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
-  res.status(status.OK).send(comment);
+  res.status(StatusCodes.OK).send(comment);
 });
 
 module.exports = router;
