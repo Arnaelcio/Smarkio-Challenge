@@ -1,4 +1,5 @@
 const express = require('express');
+require ( 'dotenv' ) . config ( );
 const commentsRoute = require('./routes/commentsRoute')
 const watsonRoute = require('./routes/watsonRoute')
 const cors = require('cors');
