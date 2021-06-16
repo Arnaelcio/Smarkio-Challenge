@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./css/Home.css";
 import { DataContext } from "../context/Context";
-import song from "../audios/audio.wav";
+import ReactAudioPlayer from "react-audio-player";
 import PopUpListen from "../components/popUpListen";
 
 function Home() {
@@ -14,6 +14,7 @@ function Home() {
     listenComment,
     comments,
     audio,
+    play,
     textToSpeechShow,
     spanTextToSpeechShow,
     PopUpListenPage,
@@ -45,20 +46,21 @@ function Home() {
       <div className="comments-view">
         <h3>Comentários: </h3>
         {comments &&
-          comments.map(({ name, comment }, index) => {
+          comments.map(({ name, comment, id }) => {
             return (
-              <div key={index} className="comment-view">
+              <div key={id} className="comment-view">
                 <h4>{name}</h4>
                 <p>{comment}</p>
-                <button onClick={(e) => listenComment(index, comment, e)}>
+                <button onClick={(e) => listenComment(id, comment, e)}>
                   Ouvir
                 </button>
                 <audio id="audio-content">
-                  <source src={song} />
+                  <source src={audio} />
                 </audio>
               </div>
             );
           })}
+        {play ? <ReactAudioPlayer src={audio} autoPlay /> : null}
       </div>
       {textToSpeechShow ? (
         <PopUpListen

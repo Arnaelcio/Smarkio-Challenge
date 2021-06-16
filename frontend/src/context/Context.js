@@ -1,12 +1,18 @@
 import React, { createContext, useEffect, useState } from "react";
 import db from "../services/requestsDb";
-import song from "../audios/audio.wav";
-
-// import song from '../audios/';
 
 export const DataContext = createContext();
 
 function DataProvider(props) {
+  const importAll = (r) => {
+    return r.keys().map(r);
+  };
+
+  const audios = importAll(
+    require.context(`${__dirname}../../../audios`, false, /\.(mp3|mpeg3|wav)$/)
+  );
+
+  const [play, setPlay] = useState(false);
   const [audio, setAudio] = useState(null);
   const [textAreaValue, setTextAreaValue] = useState("");
   const [inputNameValue, setInputNameValue] = useState("");
@@ -32,30 +38,35 @@ function DataProvider(props) {
     const responseDb = await db.get("/comments").then((res) => {
       return res.data;
     });
-    setComments(responseDb);
-  };
-  const listenComment = (index, comment, e) => {
-    const res = db.post("/watson", { index, comment }).then((res) => {
+    db.post("/watson", {
+      id: `${responseDb[0].id}`,
+      comment: `${responseDb[0].comment}`,
+    }).then((res) => {
       return res.data;
     });
-    setSpanTextToSpeechShow(comment);
+    setTimeout(() => {
+      setComments(responseDb);
+    }, 3000);
+  };
+
+  const listenComment = (id, comment, e) => {
+    const haveAudio = audios.find((audio) =>
+      audio.default.includes(`/static/media/${id}`)
+    );
+    console.log(comment);
+    if (haveAudio !== undefined) {
+      setPlay(true);
+      setAudio(haveAudio.default);
+    }
+
     setTtextToSpeechShow(true);
-    return res;
+    setSpanTextToSpeechShow(comment);
   };
 
   const PopUpListenPage = () => {
+    setPlay(false);
     setTtextToSpeechShow(!textToSpeechShow);
   };
-
-  useEffect(() => {
-    console.log(`audio: ${audio}`);
-    setAudio(song);
-    const audio2 = document.querySelector("#audio-content");
-    if (audio2 !== null) {
-      console.log(`song : ${song}`);
-      return audio2.play();
-    }
-  }, [audio]);
 
   const { children } = props;
   return (
@@ -69,6 +80,7 @@ function DataProvider(props) {
         handleClickComment,
         listenComment,
         audio,
+        play,
         setAudio,
         textToSpeechShow,
         setTtextToSpeechShow,

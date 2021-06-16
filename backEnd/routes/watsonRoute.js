@@ -10,7 +10,7 @@ const router = express.Router();
 router.use(express.json());
 
 router.post("/watson", (req, res) => {
-  const { index, comment } = req.body;
+  const { id, comment } = req.body;
   const textToSpeech = new TextToSpeechV1({
     authenticator: new IamAuthenticator({
       apikey: "woSY-xz7DmBZ_4MMvyN328o0pmKgG_lq71miaj4PDd7O",
@@ -36,7 +36,7 @@ router.post("/watson", (req, res) => {
       return textToSpeech.repairWavHeaderStream(audio);
     })
     .then((repairedFile) => {
-      fs.writeFileSync(`./../frontend/src/audios/audio.wav`, repairedFile);
+      fs.writeFileSync(`./../frontend/audios/${id}-audio.wav`, repairedFile);
     })
     .catch((err) => {
       console.log(err);
