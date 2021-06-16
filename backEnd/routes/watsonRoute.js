@@ -22,7 +22,7 @@ router.post("/watson", (req, res) => {
       "Access-Control-Allow-Headers": `'Origin', 'X-Requested-With','Content-Type' ,'Accept'`,
     },
   });
-
+console.log(comment);
   const params = {
     text: comment,
     voice: "pt-BR_IsabelaV3Voice", // Optional voice
@@ -37,11 +37,11 @@ router.post("/watson", (req, res) => {
     })
     .then((repairedFile) => {
       fs.writeFileSync(`./../frontend/src/audios/audio.wav`, repairedFile);
+      res.status(StatusCodes.OK).send(comment);
     })
     .catch((err) => {
       console.log(err);
     });
-  res.status(StatusCodes.OK).send(comment);
 });
 
 module.exports = router;
