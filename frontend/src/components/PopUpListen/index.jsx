@@ -1,7 +1,8 @@
 import React from "react";
-import "./css/PopUpListen.css";
 
-function PopUpListen({ comment, onClick }) {
+import "./styles.css";
+
+export function PopUpListen({ comment, onClick }) {
   return (
     <>
       <div className="popUpToListen">
@@ -12,5 +13,3 @@ function PopUpListen({ comment, onClick }) {
     </>
   );
 }
-
-export default PopUpListen;

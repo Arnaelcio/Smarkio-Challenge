@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./css/Header.css";
-import logo from "../images/logo-branca.png";
 
-function Header() {
+import logo from "../../images/logo-branca.png";
+
+import "./styles.css";
+
+export function Header() {
   return (
     <div className="header-section">
       <Link to="/">
@@ -63,5 +65,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;
